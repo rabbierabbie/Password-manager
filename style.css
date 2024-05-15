@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Noto+Sans+Pahawh+Hmong&family=Roboto:wght@100&display=swap");
+/*The @import rule allows you to import a style sheet into another style sheet.
+
+The @import rule must be at the top of the document (but after any @charset declaration).
+
+The @import rule also supports media queries, so you can allow the import to be media-dependent.*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+}
+/* Universal selector */
+nav {
+    background-color: darkcyan;
+    color: white;
+    padding: 12px 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    margin: 0 23px;
+    font-weight: 800;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    margin: 0 23px;
+    align-items: center;
+}
+
+ul > li {
+    list-style: none;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+ul > li:hover{
+    color: white;
+    font-weight: bold;
+}
+
+table, td, tr{
+    border: 2px solid rgb(228, 227, 227);
+    border-collapse: collapse;
+    padding: 5px 13px;
+}
+
+body{
+    background-color:white;
+}
+
+.container {
+    margin: 23px auto;
+}
+
+h1, h2, h3 {
+    margin: 23px 0;
+}
+
+.head{
+    background-color: rgb(174, 198, 136);
+    height: 90px;
+    align-content: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#password-manager{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    font-weight:bold ;
+}
+
+#description{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: white;
+    font-style: italic;
+}
+
+.table{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#store-table{
+    margin: auto;
+}
+
+.adding{
+    text-align: center;
+}
+
+#add-title{
+    font-weight: bold;
+    font-size: 25px;
+    background-color: darkcyan;
+    color: white;
+    height: 50px;
+    align-content: center;
+}
+
+.add-form{
+    margin-top: 10px;
+    background-color: rgb(174, 198, 136);
+    padding: 20px;
+    padding-bottom: 0px;
+    align-content: center;
+}
+
+label{
+    color: white;
+}
+.btn{
+    padding: 8px 17px;
+    background: black;
+    color: white;
+    font-weight: 900;
+    border: 2px solid gray;
+    border-radius: 8px;
+    margin: 25px 0;
+    cursor: pointer;
+}
+
+.btnsm{ 
+    padding: 8px 17px;
+    background: black;
+    color: white;
+    font-weight: 900;
+    border: 2px solid gray;
+    border-radius: 8px; 
+    cursor: pointer;
+}
+
+img{
+    cursor: pointer;
+    position: relative;
+    bottom: 7px;
+    width: 15px;
+    height: 13px;
+}
+
+#alert{
+    display: none;
+}

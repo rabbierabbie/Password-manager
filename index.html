@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassMan - Keep Your Passwords Safe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">PassMan</div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="head">
+            <p id="password-manager">Password Manager</p>
+                <p id="description">We know how tough it becomes to keep track of all your passwords. Do not worry further! You have arrived at a simple and reliable solution today.</p>
+        </div>
+
+        <div class="table">
+            <h2>Your Passwords <span id="alert">(Copied!)</span></h2> 
+        <!--Span tag - On the other hand, Inline elements are used within block-level elements to style or format specific parts of the content. They don’t start on a new line and only take up as much width as necessary for example include <span>, <a>, <strong>, and <em>.-->
+        <table id="store-table">
+            <tr>
+                <th>Website</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Delete</th>
+            </tr> 
+ 
+        </table>
+<!--The <tr> element defines a table row, the <th> element defines a table header, and the <td> element defines a table cell.-->
+        </div>
+
+        <div class="adding">
+            <div id="add-title">
+                <p>Add a Password</p>
+            </div>
+
+            <div class="add-form">
+                <form action="/submit" method="post">
+                    <!--Action attributr - The action attribute defines the action to be performed when the form is submitted.
+                    Method attribute - The method attribute of the form element tells the web browser how to send form data to a server. -->
+                                <!-- Text input for website -->
+                                <label for="website">Website:</label>
+                                <!--Here for attribute describes that the associated label is attached to the input type beneath with id website. -->
+                                <input type="text" id="website" name="website" required>
+                                <br><br>
+                    <!--Name - The name attribute is for submitting a form element to the server; many elements may share the same name (e.g. radio buttons, which must have the same name within the set)-->
+                                <!-- Text input for username -->
+                                <label for="username">Username:</label>
+                                <input type="text" id="username" name="username" required>
+                                <br><br>
+                    
+                                <!-- Password input -->
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="password" required>
+                                <br>
+                                <!-- Submit button -->
+                                <button class="btn" type="submit">Submit</button>
+                            </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script> <!--Make sure that the DOM is ready before we start using this-->
+</body>
+<footer id="footer">Made by Shreya</footer>
+</html>
